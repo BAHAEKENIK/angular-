@@ -1,16 +1,39 @@
 1 - In Your Own Words , What is Angular and why would you chose it over vanilla Javascript for a large project ?
 
-# Angular is a framework that provide a loot of dependencies and loot fonctionality structured and unstandable unstad javascript vanilla is a like a sbaguity in a large project you will lose direction 
-
+Angular is a framework that provide a loot of dependencies and loot fonctionality structured and unstandable unstad javascript vanilla is a like a sbaguity in a large project you will lose direction 
+the strength of angular is not the number of dependencies, but the opinionated architectures and buid-n tooling (routing, HTTP, forms, DI).
+a huge to choose angular. It gives you static typing, better IDE support , and cashes bugs at compile time.
 
 2 - Compare Angular with Laravel Blade - What are the key differences in where and how the HTML is generated ?
 the angular work in browser in client side its like consome the API that come from the backend its work just in frontend side but laravel blade the laravel generate html in backend side and send it to the client side front end so its make server slower 
 
 
 3 - List three features that Angular provides out of the box that you world have to add separatly if you were using React ?
-
+x"so its make server slower", this is a common oversimplification . 
+.Initial load time : Angular sends a blank page + Javascript bundle; the browser then renders everthing . Blade sends the full HTML immidiatly, so the user sees content faster (Better for SEO).
 
 the react focus in user view layar so you chose the managig route and service but in angular is full fulled featured that provide all access that you try build it by your self in react ok 
+x
+correct answer :
+"
+Built in Router -for navigation between views .
+HttpClient - for making API calls with interceptors 
+FOrms module (template-driven or reactive ) for handling user input with validation
+dependency Injection - fom managing services and sharing logic 
+Change Detection - Automatic UI updates when data chages .
 
 
 4:23 PM 6/30/2026
+
+
+part 8 -What is the difference between a Single‑Page Application and a Multi‑Page Application? Give one advantage and one disadvantage of each.
+
+
+i hear before the single page aplication SPA have a loot of component so its like a box and we have a loot of boxes in it its easy to modify and render again but for multi-page application there are a loot boxes conected so its hard to modify theme 
+
+
+part 9 - Should we rewrite the dashboard in Angular, or keep it in Blade with some AJAX?
+
+
+no i will work with angular because the angular consome api and work with it to render a page and have some dependencies injection i dont know yet but i thing there will loot of dipendencies chat that have good view for user friendly 
+but laravel we will have hard work when we work and we should install dependncies or code it by a way hard i thing 

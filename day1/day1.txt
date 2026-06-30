@@ -1,0 +1,16 @@
+1 - In Your Own Words , What is Angular and why would you chose it over vanilla Javascript for a large project ?
+
+# Angular is a framework that provide a loot of dependencies and loot fonctionality structured and unstandable unstad javascript vanilla is a like a sbaguity in a large project you will lose direction 
+
+
+2 - Compare Angular with Laravel Blade - What are the key differences in where and how the HTML is generated ?
+the angular work in browser in client side its like consome the API that come from the backend its work just in frontend side but laravel blade the laravel generate html in backend side and send it to the client side front end so its make server slower 
+
+
+3 - List three features that Angular provides out of the box that you world have to add separatly if you were using React ?
+
+
+the react focus in user view layar so you chose the managig route and service but in angular is full fulled featured that provide all access that you try build it by your self in react ok 
+
+
+4:23 PM 6/30/2026

@@ -1,0 +1,39 @@
+const routes = [
+	{path: '', component: HomeComponent},
+	{path: 'products', component: ProductComponent },
+	{path: 'contact', component: contactComponent }
+];
+
+What happens in a SPA when a user clicks a link, compared to a traditional MPA?
+
+the SAP(single page application) is when the user click in button products the url send request without flash refernce the entire page the angular send a api like /api/products/ and the server send json that containe the products and the angular afiche just section of products without render the entire page 
+
+
+the MPA (multi page application) when the user click in button products the url is change in browser page and the the entire page with refrech with a flash 
+
+
+Why do SPAs often feel faster than MPAs after the first load?
+
+the SAP often faster because just trait the only data in just one component without render the hool page instead of reloading the entire page , the app dynamically rewrites the current page with new data fetched from server (like the json )
+
+but the MPA the entire page reload and the DOM distroyed and recreate from the beginning for the new data if we click in a button the server sends a complete HTML document for every new page or action you see a flash refrench the entire page 
+
+What is one major disadvantage of an SPA compared to an MPA?
+
+the major disadvantage of SPA is compared to an MPA is the MPA is good for Better SEO (Search engines can read the HTML immediatly ) instead of SPA
+
+Look at this scenario: A user opens your Angular app, navigates to /products, then to /contact, then presses the browser's "Back" button. How does Angular handle the "Back" button without reloading the page?
+
+
+the SPA return to the navigate by back button to /products without reloading the page because he use the browser History API that store the api that we access before and there navigation definition 
+
+its store the URL state and a small state object 
+
+
+
+When you click a link , Angular calls history.pushState({}, '', '/products'). This adds /products to the browser's history stack without reloading .
+When the user presses the "Back" button , the browser fires a popstate event.
+Angular's Router listens to the popstate event.
+The Router reads the current URL (/products) from the adress bar 
+the Router matches /products against your routes array
+The Router destroys the contact Component and instantiates the products Component inside <router-outlet>
